@@ -11,11 +11,11 @@ import (
 	"testing"
 	"time"
 
-	"aviasales-shared-logging/application/usecases"
-	"aviasales-shared-logging/domain/entities"
-	domainerrors "aviasales-shared-logging/domain/errors"
-	"aviasales-shared-logging/domain/interfaces"
-	infrahttp "aviasales-shared-logging/infrastructure/http"
+	"github.com/KamnevVladimir/aviabot-shared-logging/application/usecases"
+	"github.com/KamnevVladimir/aviabot-shared-logging/domain/entities"
+	domainerrors "github.com/KamnevVladimir/aviabot-shared-logging/domain/errors"
+	"github.com/KamnevVladimir/aviabot-shared-logging/domain/interfaces"
+	infrahttp "github.com/KamnevVladimir/aviabot-shared-logging/infrastructure/http"
 )
 
 // Mock Repository для Integration тестов

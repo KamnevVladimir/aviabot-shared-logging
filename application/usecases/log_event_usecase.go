@@ -4,9 +4,9 @@ import (
 	"context"
 	"strings"
 	
-	"aviasales-shared-logging/domain/entities"
-	"aviasales-shared-logging/domain/errors"
-	"aviasales-shared-logging/domain/interfaces"
+	"github.com/KamnevVladimir/aviabot-shared-logging/domain/entities"
+	"github.com/KamnevVladimir/aviabot-shared-logging/domain/errors"
+	"github.com/KamnevVladimir/aviabot-shared-logging/domain/interfaces"
 )
 
 // LogEventUseCase обрабатывает создание новых лог записей

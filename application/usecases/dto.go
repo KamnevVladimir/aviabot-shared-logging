@@ -3,8 +3,8 @@ package usecases
 import (
 	"time"
 	
-	"aviasales-shared-logging/domain/entities"
-	"aviasales-shared-logging/domain/interfaces"
+	"github.com/KamnevVladimir/aviabot-shared-logging/domain/entities"
+	"github.com/KamnevVladimir/aviabot-shared-logging/domain/interfaces"
 )
 
 // LogEventRequest представляет запрос на создание лог записи

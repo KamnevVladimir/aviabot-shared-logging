@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"aviasales-shared-logging/domain/entities"
+	"github.com/KamnevVladimir/aviabot-shared-logging/domain/entities"
 )
 
 // LogRepository определяет контракт для хранения и получения логов

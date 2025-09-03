@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"aviasales-shared-logging/application/usecases"
-	"aviasales-shared-logging/domain/entities"
-	domainerrors "aviasales-shared-logging/domain/errors"
-	"aviasales-shared-logging/domain/interfaces"
+	"github.com/KamnevVladimir/aviabot-shared-logging/application/usecases"
+	"github.com/KamnevVladimir/aviabot-shared-logging/domain/entities"
+	domainerrors "github.com/KamnevVladimir/aviabot-shared-logging/domain/errors"
+	"github.com/KamnevVladimir/aviabot-shared-logging/domain/interfaces"
 )
 
 // LogsHandler обрабатывает HTTP запросы для логирования
