@@ -1,33 +1,31 @@
-# Aviabot Shared Logging
+# Shared Logging Library
 
-Библиотека для структурированного логирования в микросервисах Aviabot.
+Библиотека для централизованного логирования.
+
+## Назначение
+
+- HTTP клиент для отправки логов
+- Структуры данных для логов
+- Use cases для работы с логами
+- HTTP handlers для logging-service
 
 ## Содержимое
 
-- `domain/entities` - Сущности логирования (LogEntry, LogLevel)
-- `domain/errors` - Ошибки логирования
-- `domain/interfaces` - Интерфейсы репозиториев
-- `application/usecases` - Use cases для логирования
-- `infrastructure/http` - HTTP handlers для логирования
+- `domain/entities/` - структуры логов
+- `application/usecases/` - бизнес-логика
+- `infrastructure/http/` - HTTP handlers
 
 ## Использование
 
 ```go
-import (
-    "github.com/KamnevVladimir/aviabot-shared-logging/domain/entities"
-    "github.com/KamnevVladimir/aviabot-shared-logging/application/usecases"
-)
+import "github.com/KamnevVladimir/aviabot-shared-logging/infrastructure/http"
+
+// Создание HTTP клиента
+client := http.NewLogClient("http://logging-service:8080")
+client.Log("INFO", "service-name", "event", "message", metadata)
 ```
 
-## Особенности
+## Версионирование
 
-- Структурированные JSON логи
-- Поддержка различных уровней логирования
-- Метрики и алерты
-- Railway-совместимый формат
-
-## Установка
-
-```bash
-go get github.com/KamnevVladimir/aviabot-shared-logging@v1.0.0
-```
+- v1.0.3 - текущая версия
+- Используется во всех микросервисах
